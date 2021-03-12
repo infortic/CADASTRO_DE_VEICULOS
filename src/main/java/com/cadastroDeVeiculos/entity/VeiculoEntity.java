@@ -10,6 +10,8 @@ import javax.persistence.Id;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 @Entity
@@ -29,5 +31,28 @@ public class VeiculoEntity implements Serializable {
 	private Date dataCadastro;
 	private String modelo;
 	private String marca;
+	
+	
+	
+	public VeiculoEntity(String placa, BigDecimal precoAnuncio, Integer ano, BigDecimal precoKbb,
+			Date dataCadastro, String modelo, String marca) {
+		super();
+		this.placa = placa;
+		this.precoAnuncio = precoAnuncio;
+		this.ano = ano;
+		this.precoKbb = precoKbb;
+		this.dataCadastro = dataCadastro;
+		this.modelo = modelo;
+		this.marca = marca;
+	}
+
+
+
+	public VeiculoEntity() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
 	
 }
