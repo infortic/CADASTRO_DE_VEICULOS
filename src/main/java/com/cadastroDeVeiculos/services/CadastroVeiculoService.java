@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import com.cadastroDeVeiculos.entity.VeiculoEntity;
 
 @Service
-public class IssuesEventsService {
+public class CadastroVeiculoService {
 
 	
 

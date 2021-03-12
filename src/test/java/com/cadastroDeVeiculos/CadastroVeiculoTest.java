@@ -1,4 +1,4 @@
-package com.octoevents;
+package com.cadastroDeVeiculos;
 
 
 import org.junit.jupiter.api.Test;
@@ -23,5 +23,7 @@ public class CadastroVeiculoTest {
 	private TestRestTemplate restTemplet;
 	@LocalServerPort
 	private int port;
+	
+	
 
 }
