@@ -1,9 +1,7 @@
 package com.cadastroDeVeiculos.DTO;
 
 import java.math.BigDecimal;
-
 import com.google.gson.Gson;
-
 import lombok.Getter;
 import lombok.Setter;
 

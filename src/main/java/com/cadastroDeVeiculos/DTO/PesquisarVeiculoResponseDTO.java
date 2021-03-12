@@ -2,9 +2,7 @@ package com.cadastroDeVeiculos.DTO;
 
 import java.math.BigDecimal;
 import java.util.Date;
-
 import com.cadastroDeVeiculos.entity.VeiculoEntity;
-
 import lombok.Getter;
 import lombok.Setter;
 

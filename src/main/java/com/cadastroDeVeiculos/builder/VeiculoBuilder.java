@@ -2,12 +2,7 @@ package com.cadastroDeVeiculos.builder;
 
 import java.math.BigDecimal;
 import java.util.Date;
-
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-
 import com.cadastroDeVeiculos.entity.VeiculoEntity;
-
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
