@@ -11,9 +11,7 @@ public class PrecoKBBDTO {
 
 	private Long id;
 	private BigDecimal price;
-		
-	 
-	
+			
 	public PrecoKBBDTO fromJson(String json) {
 		Gson gson = new Gson();
 		PrecoKBBDTO precoKBBDTO = gson.fromJson(json , this.getClass());
