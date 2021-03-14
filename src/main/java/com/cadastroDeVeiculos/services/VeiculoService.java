@@ -17,6 +17,12 @@ import com.cadastroDeVeiculos.builder.VeiculoBuilder;
 import com.cadastroDeVeiculos.entity.VeiculoEntity;
 import com.cadastroDeVeiculos.repository.VeiculoRepository;
 
+/**
+* API Criada para receber dados de veiculo e cadastrar os mesmos no banco de dados
+* @author Cleiton Cardoso Silva 
+*/
+
+
 @Service
 public class VeiculoService {
 
@@ -25,6 +31,12 @@ public class VeiculoService {
 	@Autowired
 	private VeiculoRepository veiculoRepository;
 
+	
+	/**
+	* Metodo respónsaval por receber os dados do veiculo e cadastrar o mesmo
+	* @param  VeiculoPayLoadDTO 
+	* @return VeiculoPayLoadDTO
+	*/
 	public VeiculoPayLoadDTO veiculoIncluir(VeiculoPayLoadDTO veiculoPayLoadDTO) {
 
 		VeiculoEntity veiculo = VeiculoBuilder.getinstance()
@@ -50,6 +62,13 @@ public class VeiculoService {
 		return PrecoKBBDTO.getInstace().fromJson(response.getBody());
 	}
 	
+
+	/**
+	* Metodo respónsaval por pesquisar veiculos no banco de dados e retornar os dados paginado
+	* @param  String placa
+	* @param  Integer numeroPagina
+	* @return List<PesquisarVeiculoResponseDTO>
+	*/
 	public List<PesquisarVeiculoResponseDTO> pesquisarVeiculo(String placa, Integer numeroPagina) {
 		if(placa == null) {
 			Pageable pageRequest = PageRequest.of(numeroPagina, NUMERO_DE_REGISTROS_POR_PAGINA);
